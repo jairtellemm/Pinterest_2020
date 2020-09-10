@@ -1,0 +1,510 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-weight: bold;
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,Helvetica,"\30D2\30E9\30AE\30CE\89D2\30B4 Pro W3",Hiragino Kaku Gothic Pro,"\30E1\30A4\30EA\30AA",Meiryo,"\FF2D\FF33 \FF30\30B4\30B7\30C3\30AF",Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
+}
+
+html{
+    background-color: rgba(0, 0, 0, 0.84);
+}
+
+/*=================================================*/
+/*=======================BOTONES===================*/
+/*=================================================*/
+.botones2{
+    display: none;
+}
+
+a:link, a:visited, a:disabled a:first-child{
+    text-decoration:none;
+    color: black;
+}
+a:nth-child(2), a:nth-child(3){
+    color: white;
+}
+.botones{
+/*    width: 10%;*/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.inicio{
+    padding: 9px 25px;
+    background-color: white;
+    border: none;
+    border-radius: 50px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+/*  text-decoration: none;*/
+}.inicio:hover{
+    background: rgb(132, 83, 83);
+}
+.hoy, .siguiendo{
+    padding: 9px 25px;
+/*    background-color: rgba(222,4434,554,1);*/
+    border: none;
+    border-radius: 50px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+/*    text-decoration: none;*/
+}.hoy:hover, .siguiendo:hover{
+    background: rgba(129, 129, 129, 0.54);
+}
+
+/*=================================================*/
+/*=======================LOGO======================*/
+/*=================================================*/
+.logo{
+/*    display: flex;*/
+    width: 100px;
+    cursor: pointer;
+}
+
+/*=================================================*/
+/*======ICONOS=======*/
+/*=================================================*/
+.iconos{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 25%;
+}
+.usuario, .notificacion, .chat{
+    border-radius: 50px;
+}
+.notificacion:hover, .chat:hover, .flecha:hover{
+     background: rgba(186, 186, 186, 0.8);
+}
+.flecha{
+    width: 40px;
+    height: 40px;
+    border-radius: 30px;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 12px; 
+}
+.notificacion img, .chat img{
+    width:40px;
+    height:40px;
+    margin: 10px;
+    cursor: pointer;
+}
+.plus img{
+    display: none;
+}
+.usuario img{
+    width:50px;
+    height:50px;
+    border-radius: 100px;
+    border: 1px solid #cccccc;
+    cursor: pointer;
+}
+.flecha img{
+    width:20px;
+    height:20px;
+    vertical-align:middle;
+}
+
+/*=================================================*/
+/*===================HEADER=======================*/
+/*=================================================*/
+nav{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+/*	justify-content: space-between;*/
+	position: fixed;
+}
+
+
+header{
+/*    height: 100px;*/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0px;
+/*    border-bottom: 2px solid;*/
+    position: sticky;
+/*    top: 0px;*/
+    background: gray;
+    width: 100%;
+/*	height: 80px;*/
+}
+
+.barra_busqueda, nav, header {
+    display: flexbox;
+    height: 120px;
+    background-color: BLACK;
+    color: red;
+}
+
+
+.barra_busqueda, header {
+    display: flexbox;
+    height: 120px;
+    background-color: BLACK;
+    color: red;
+}
+.barra_busqueda{
+  position: relative;
+  height: 65px;
+  width: 100%;
+  background-color: black;
+  top: 0px;
+  padding: 5px 15px;
+      color: white;
+}
+.barra_busqueda input {
+  width: 100%;
+  height: 100%;
+  background-color: #EFEFEF;
+  border-radius: 100px;
+  border: none;
+     background-color: rgba(139, 139, 139, 0.54);
+      color: red;
+}
+.barra_busqueda input#texxt{
+  border: none;
+  font-size: 1.5rem;
+  float: right;
+  padding-left: 35px;
+  padding-right: 25px;
+    border: 1px solid white;
+    color: white;
+}
+
+/*=================================================*/
+/*==================GALERIA========================*/
+/*=================================================*/
+.contenedor-grid {
+    padding-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 200px);
+    grid-gap: 10px;
+    justify-content: center;
+}
+
+.element{
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.element img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.level_1{
+    grid-row-end: span 50;
+}
+.level_2{
+     grid-row-end: span 20;
+}
+.level_3{
+     grid-row-end: span 40;
+}
+.level_4{
+     grid-row-end: span 30;
+}
+
+/*=================================================*/
+/**********************FOOTER***********************/
+/*=================================================*/
+
+
+
+.users, .home, .user, .notificacion2{
+    border-radius: 50px;
+}
+
+.users img, .home img, .notificacion2 img, .usuario2 img{
+    width:40px;
+    height:40px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.usuario2 img{
+    position: relative;
+    top: -12px;
+    width:60px;
+    height:60px;
+    border-radius: 100px;
+    border: 1px solid #cccccc;
+    cursor: pointer;
+}
+
+/*=================================================*/
+/*===============MEDIA QUERIES 1000PX==============*/
+/*=================================================*/
+
+@media (max-width: 1000px){
+    
+   nav{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+/*	justify-content: space-between;*/
+	transition: .5s;
+    position: fixed;
+}
+
+nav.hide{
+	transform: translateY(-100%);
+}
+
+header{
+/*    height: 100px;*/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0px;
+/*    border-bottom: 2px solid;*/
+    position: sticky;
+/*    top: 0px;*/
+    background: gray;
+    width: 100%;
+/*	height: 80px;*/
+    transition: .5s;
+}
+
+ nav, header {
+    display: flexbox;
+    height: 120px;
+    background-color: BLACK;
+    color: red;
+}
+    
+.barra_busqueda{
+        height: 70px;
+    }
+
+/********************************************************************************/
+
+    .header2 {
+        padding: 10px 0px;
+        position: sticky;
+        background: rgba(0, 0, 0, 0.67);
+        font-size: 2rem;
+        top: 120px;
+        transition: .5s;
+    }
+    
+    .header2.hide2{
+        transform: translateY(-300%);
+    }
+
+    .botones2{
+        display: flex;
+        justify-content: space-around;
+        color: white; 
+        display: flex;
+        /*    flex-direction: row;*/
+        justify-content: space-around;
+        align-items: center;
+        align-content: center;
+        padding: 10px 0px;
+        /*    border-bottom: 2px solid;*/
+        position: sticky;
+        top: 0px;
+        /*    background: gray;*/
+        width: 100%;
+        /*	height: 80px;*/
+        transition: .5s;
+    }
+    
+    .seccion-1{
+        width: 100px;
+        height: 50px;
+        background: white;
+        color: black;
+        text-align: center;
+        border-radius: 40px
+    }
+    
+    .logo{
+        display: none;
+    }
+    
+    .botones{
+        display: none;
+    }
+    
+   .chat img,  .plus img{
+        width: 40px;
+        height: 40px;
+        margin: 10px;
+        cursor: pointer;
+        display: flex;
+    }
+    
+    .contenedor-grid {
+        padding-top: 20px;
+    }
+    
+    .notificacion, .usuario, .flecha{
+        display: none;
+    }
+/*    ----------------------------------------------------------*/
+    
+     .contenedor{
+    transition: .5s; 
+    display: flex;
+    justify-content: space-between;
+}
+
+     footer{
+    margin-left: auto;
+    margin-right: auto;
+    height: 80px;
+    width: 300px;
+    border: 1px solid;
+    position: sticky;
+    bottom: 50px;
+    background: rgba(0, 0, 0, 0.67);
+    border-radius: 50px;
+/*    display: none;*/
+         display: flex;
+/*	align-items: center;*/
+/*	justify-content: space-between;*/
+	transition: 1s;
+}
+
+.iconos_footer{
+    padding-left: 20px;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 10px;
+}
+    
+    footer.hide3{
+         transform: translateY(200%);
+    }
+
+}
+
+/*=================================================*/
+/*===============MEDIA QUERIES 414PX==============*/
+/*=================================================*/
+@media (max-width: 414px){
+    
+     .header2 {
+        padding: 10px 0px;
+        position: sticky;
+        background: black;
+        font-size: 1rem;
+        top: 120px;
+        background: rgba(0, 0, 0, 0.67);
+    }
+      .header2.hide2{
+        transform: translateY(-350%);
+    }
+
+
+    .botones2{
+        display: flex;
+        justify-content: space-around;
+        color: white;
+    }
+    
+    .seccion-1{
+        width: 60px;
+        height: 30px;
+        background: white;
+        color: black;
+        text-align: center;
+        border-radius: 40px
+    }
+    
+    .barra_busqueda {
+        height: 45px;
+    }
+    
+    .contenedor{
+    transition: .5s; 
+    display: flex;
+/*    justify-content: space-between;*/
+}
+
+     footer{
+    margin-left: auto;
+    margin-right: auto;
+    height: 60px;
+    width: 200px;
+    border: 1px solid;
+    position: sticky;
+    bottom: 50px;
+    background: rgba(0, 0, 0, 0.67);
+    border-radius: 50px;
+/*    display: none;*/
+/*	align-items: center;*/
+/*	justify-content: space-between;*/
+	transition: 1s;
+         display: flex;
+         justify-content: space-around;
+         padding-right: 13px;
+}
+
+.iconos_footer{
+    padding-left: 1px;
+    display: flex;
+/*    justify-content: space-between;*/
+    padding-top: 1px;
+    align-items: center;
+}
+    
+    footer.hide3{
+         transform: translateY(200%);
+    }
+    
+    .users img, .home img, .notificacion2 img, .usuario2 img{
+        width:30px;
+        height:30px;
+        margin: 1px;
+        cursor: pointer;
+    }
+
+    .usuario2 img{
+        top: -1px;
+        width:35px;
+        height:35px;
+    }
+    
+    .users, .home, .notificacion2, .usuario2{
+        display: flex;
+        padding-left: 10px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
